@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Status Kelulusan</h1>
-    @if ($status === true)
+    @if ($status === 1)
         <p>Selamat, Anda telah lulus!</p>
     @elseif ($status === null)
         <p>NIM tidak ditemukan di database.</p>

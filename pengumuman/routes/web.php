@@ -16,10 +16,25 @@ use App\Http\Controllers\ImportController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+Route::get('/404', function () {
+    return view('404');
+});
+Route::get('/team', function () {
+    return view('DepartemenTech');
+});
+Route::get('/privasi', function () {
+    return view('privasi');
+});
+Route::get('/customerService', function () {
+    return view('customerService');
+});
+Route::get('/contactUs', function () {
+    return view('contactUs');
 });
 
-Route::get('/', [StudentController::class, 'index'])->name('input-nim');
+Route::get('/pengumuman', [StudentController::class, 'index'])->name('input-nim');
 Route::post('/check', [StudentController::class, 'check'])->name('check-nim');
 
 

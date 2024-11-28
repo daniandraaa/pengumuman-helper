@@ -38,7 +38,7 @@ return [
         'pengumuman' => [
             'driver' => 'mysql',
             'host' => env('PENGUMUMAN_DB_HOST', '127.0.0.1'),
-            'port' => env('PENGUMUMAN_DB_PORT', '3308'),
+            'port' => env('PENGUMUMAN_DB_PORT', '3307'),
             'database' => env('PENGUMUMAN_DB_DATABASE', 'pengumuman'),
             'username' => env('PENGUMUMAN_DB_USERNAME', 'root'),
             'password' => env('PENGUMUMAN_DB_PASSWORD', ''),
