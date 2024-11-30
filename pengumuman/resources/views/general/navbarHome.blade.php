@@ -20,11 +20,11 @@
       </button>
 
       <div class="items-center gap-6 hidden sm:flex 2xl:text-xl">
-        <a href="{{ url('/') }}">Home</a>
+      <a href="{{ url('/') }}">Home</a>
         <a href="{{ url('/#about') }}">About</a>
-        <a href="{{ url('/team') }}">Team</a>
+        <a href="{{ url('/#team') }}">Team</a>
         <a href="{{ url('/#album') }}">Album</a>
-        <a href="{{ url('/contactUs') }}">Contact</a>
+        <a href="{{ url('/#contact') }}">Contact</a>
       </div>
     </header>
 
@@ -36,7 +36,7 @@
     >
         <a href="{{ url('/') }}">Home</a>
         <a href="{{ url('/#about') }}">About</a>
-        <a href="{{ url('/team') }}">Team</a>
+        <a href="{{ url('/#team') }}">Team</a>
         <a href="{{ url('/#album') }}">Album</a>
-        <a href="{{ url('/contactUs') }}">Contact</a>
+        <a href="{{ url('/#contact') }}">Contact</a>
     </aside>

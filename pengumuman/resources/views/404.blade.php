@@ -28,41 +28,6 @@
     </div>
     </section>
 
-    <!-- Download -->
-    <section class="px-4 py-6 bg-x-navy">
-      <div
-        class="max-w-4xl 2xl:max-w-4xl mx-auto flex sm:justify-evenly sm:items-center flex-col sm:flex-row gap-6"
-      >
-        <div class="space-y-2">
-          <h1 class="text-xl sm:text-2xl font-bold">
-            Dapatkan Kami Di Device Anda
-          </h1>
-          <p class="text-sm xl:text-base">
-            Anda bisa men-download aplikasi kami di Android dan juga iOS
-          </p>
-        </div>
-
-        <div class="flex gap-2 flex-none">
-          <a href="#">
-            <img
-              src="./assets/images/download-app-store.png"
-              alt="download-app-store"
-              class="h-12 2xl:h-16"
-            />
-            <span class="sr-only">Download di App Store</span>
-          </a>
-          <a href="#">
-            <img
-              src="./assets/images/download-play-store.png"
-              alt="download-play-store"
-              class="h-12 2xl:h-16"
-            />
-            <span class="sr-only">Download di Play Store</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
     <!-- Footer -->
     @include('general.footer')
 

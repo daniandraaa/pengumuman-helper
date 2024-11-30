@@ -29,13 +29,27 @@
       
       <!-- privasi -->
       <section id="team" class="bg-x-lightblue p-4 pb-0 rounded-t-[2rem] relative mt-20">
-        <div style="justify-content: end;" class="relative max-w-4xl mx-auto flex ">
-          <div class="absolute -top-11 bg-x-lightblue rounded-[5rem] p-3 z-20">
-            <h1 class="text-xl text-center sm:text-3xl font-bold font-mplus px-8 sm:px-10 py-3 sm:py-4 bg-x-blue rounded-[5rem]">
-              Privacy & Policy 
-            </h1>
-          </div>
-        </div>
+      <!-- id-krbijakan -->
+       <div id="content-id-privasi" style="display: block;">
+         <div style=" justify-content: end;" class="relative max-w-4xl mx-auto flex ">
+           <div class="absolute -top-11 bg-x-lightblue rounded-[5rem] p-3 z-20">
+             <h1 class="text-xl text-center sm:text-3xl font-bold font-mplus px-8 sm:px-10 py-3 sm:py-4 bg-x-blue rounded-[5rem]">
+               Kebijakan & Privasi 
+             </h1>
+           </div>
+         </div>
+       </div>
+        <!-- en-kebijakan -->
+         <div id="content-en-privacy" style="display: none;">
+           <div  style="justify-content: end;" class="relative max-w-4xl mx-auto flex ">
+             <div class="absolute -top-11 bg-x-lightblue rounded-[5rem] p-3 z-20">
+               <h1 class="text-xl text-center sm:text-3xl font-bold font-mplus px-8 sm:px-10 py-3 sm:py-4 bg-x-blue rounded-[5rem]">
+                 Privacy & Policy 
+               </h1>
+             </div>
+           </div>
+         </div>
+
         <!-- id -->
         <div id="content-id" style=" display: block; text-align: justify; color: black;" class="value rounded-t-[2rem] px-12 pt-12 pb-8 bg-x-extra-lightblue z-10 relative ">
           <br>
@@ -187,45 +201,9 @@
       </section>   
     </div>
     
-    <div class="bg-x-darkblue ">
-      <!-- download -->
-      <section class="px-4 py-6 bg-x-navy">
-        <div
-          class="max-w-4xl 2xl:max-w-4xl mx-auto flex sm:justify-evenly sm:items-center flex-col sm:flex-row gap-6"
-        >
-          <div class="space-y-2">
-            <h1 class="text-xl sm:text-2xl font-bold">
-              Dapatkan Kami Di Device Anda
-            </h1>
-            <p class="text-sm xl:text-base">
-              Anda bisa men-download aplikasi kami di Android dan juga iOS
-            </p>
-          </div>
-  
-          <div class="flex gap-2 flex-none">
-            <a href="#">
-              <img
-                src="./assets/images/download-app-store.png"
-                alt="download-app-store"
-                class="h-12 2xl:h-16"
-              />
-              <span class="sr-only">Download di App Store</span>
-            </a>
-            <a href="#">
-              <img
-                src="./assets/images/download-play-store.png"
-                alt="download-play-store"
-                class="h-12 2xl:h-16"
-              />
-              <span class="sr-only">Download di Play Store</span>
-            </a>
-          </div>
-        </div>
-      </section>
-  
       <!-- Footer -->
       @include('general.footer')
-    </div>
+    
 
     <script src="./assets/js/index.js"></script>
   </body>

@@ -736,6 +736,9 @@ a:hover{
 }
 
 
+.mb-20{
+  margin-bottom: 20rem;
+}
 .mb-2{
   margin-bottom: 0.5rem;
 }
@@ -751,6 +754,9 @@ a:hover{
 .mb-10{
   margin-bottom: 8rem;
 }
+.mb-14{
+  margin-bottom: 14rem;
+}
 
 .mt-10{
   margin-top: 2.5rem;
@@ -758,6 +764,12 @@ a:hover{
 
 .mt-20{
   margin-top: 5rem;
+}
+.mt-25{
+  margin-top: 10rem;
+}
+.mt-30{
+  margin-top: 15rem;
 }
 
 .block{
@@ -783,6 +795,12 @@ a:hover{
 .h-12{
   height: 3rem;
 }
+
+/* < khusus icon download playStore */
+.h-13{
+  height: 3.2rem;
+}
+/* khusus icon download playStore >*/
 
 .h-16{
   height: 4rem;
@@ -1076,6 +1094,11 @@ a:hover{
   padding-right: 2rem;
 }
 
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 2.5rem;
+}
+
 .py-10{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -1109,6 +1132,9 @@ a:hover{
 
 .pb-8{
   padding-bottom: 3rem;
+}
+.pb-10{
+  padding-bottom: 4rem;
 }
 
 .pb-24{
@@ -1336,6 +1362,13 @@ a:hover{
 
 /* Layout untuk layar kecil (di bawah 640px) - Satu foto per baris */
 @media (max-width: 640px) {
+  .mt-25{
+    margin-top: 8rem;
+  }
+  .sm\:px-6{
+    padding-left:0px;
+    padding-right:0px;
+  }
   .photo-team-staf {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); /* Mengisi kolom secara otomatis */
@@ -1407,7 +1440,22 @@ a:hover{
   .photo-5 { grid-area: photo-5; }
 }
 
+
+/* INi untuk tambahan congratulations */
+.text-cong-xl{
+  font-size: calc(28px + 1vw); /* Ukuran font akan bertambah seiring lebar layar */
+  line-height: calc(1.75rem + 1vw);
+}
 @media (min-width: 640px){
+  .sm\:text-deskrip-cong{
+    font-size: 32px;
+    line-height: 2rem;
+  }
+  .sm\:text-cong{
+    font-size: 55px;
+    line-height: 2rem;
+  }
+  ////////////
   .photo-team-staf {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); 
@@ -1616,11 +1664,15 @@ a:hover{
   }
 }
 @media (max-width: 768px) {
+ 
+  .md\:px-kelulusan{
+    margin-left:calc(2rem - 1rem);
+    margin-right:calc(2rem - 1rem);
+  }
   .md\:px-1{
     margin-left:calc(3rem - 1rem);
     margin-right:calc(3rem - 1rem);
   }
-
   .md\:px-2{
     margin-left:calc(5rem - 2rem);
     margin-right:calc(5rem - 2rem);
@@ -1699,6 +1751,21 @@ a:hover{
 }
 
 @media (min-width: 1024px){
+  #kirim-button {
+    background-color: #2d78db;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 10px;
+    padding-left:50px; 
+    padding-right:50px; 
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: self-end;
+    z-index: 30;
+  }
   .photo-team-staf {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Mengisi kolom secara otomatis */
@@ -1777,6 +1844,10 @@ a:hover{
     height: 5rem;
   }
 
+  .xl\:h-25{
+    height: 5.5rem;
+  }
+
   .xl\:h-32{
     height: 8rem;
   }
@@ -1812,6 +1883,9 @@ a:hover{
 @media (min-width: 1536px){
   .\32xl\:h-16{
     height: 4rem;
+  }
+  .\32xl\:h-17{
+    height: 4.4rem;
   }
 
   .\32xl\:h-24{
@@ -1936,25 +2010,24 @@ a:hover{
 }
 
 #maskot-kiri img {
-  max-width: 608px;
-  height: auto;
+    max-width:  calc(80% - 100px); /* Berkurang proporsional saat layar mengecil */
+    height:auto;
 }
 
 #maskot-kiri {
   top: 50%;
   transform: translateY(-65%);
-  margin-left: 30px;
-  z-index: 30;
+  margin-left: calc(20px + (0.5vw - 20px));
 }
 
 #maskot-kanan img {
-  max-width: 420px;
+  max-width: 350px;
   height: auto;
 }
 #maskot-kanan {
   top: 50%;
-  margin-left: 950px;
-  transform: translateY(13%);
+  margin-left: calc(920px + (63vw - 920px));
+  transform: translateY(25%);
 }
 
 #contact-section {
@@ -2003,6 +2076,7 @@ textarea {
   border-radius: 10px;
   outline: none;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 30;
 }
 
 textarea {
@@ -2010,20 +2084,6 @@ textarea {
   height: 100px;
 }
 
-#kirim-button {
-  background-color: #2d78db;
-  color: white;
-  font-size: 0.8rem;
-  font-weight: bold;
-  padding: 8px;
-  padding-left:40px; 
-  padding-right:40px; 
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  align-self: self-end;
-}
 
 #kirim-button:hover {
   background-color: #1b5c9e;
@@ -2036,9 +2096,9 @@ textarea {
   color: white;
   font-size: calc(0.5rem + 0.5vw); 
   font-weight: bold;
-  padding: 10px 0px;
-  padding-left:40px; 
-  padding-right:40px; 
+  padding: 15px 30px;
+  //padding-left:40px; 
+  //padding-right:40px; 
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -2205,8 +2265,52 @@ textarea {
   #maskot-kanan {
     display: none;
   }
+
+  #kirim-button {
+    background-color: #2d78db;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 8px;
+    /* padding-left: min(200px, calc(8% + 50px));
+    padding-right: min(200px, calc(8% + 50px)); */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* align-self: center; */
+    z-index: 30;
+  }
 }
+@media (min-width: 1284px) {
+  #maskot-kiri img {
+    max-width:  calc(100% - 150px); /* Berkurang proporsional saat layar mengecil */
+    height:auto;
+  }
+}
+@media (min-width: 1444px) {
+  #maskot-kiri img {
+    max-width: 550px; /* Berkurang proporsional saat layar mengecil */
+    height:auto;
+  }
 
+  #maskot-kiri {
+    top: 50%;
+    transform: translateY(-65%);
+    margin-left: calc(30px + (7vw - 30px));
+    z-index: 1;
+  }
 
+  #maskot-kanan img {
+    max-width: 400px;
+    height: auto;
+  }
+  #maskot-kanan {
+    top: 50%;
+    margin-left: calc(920px + (59.5vw - 920px));
+    transform: translateY(13%);
+  }
+
+}
 
 

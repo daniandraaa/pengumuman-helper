@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\ImportController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,7 +38,7 @@ Route::get('/contactUs', function () {
 Route::get('/pengumuman', [StudentController::class, 'index'])->name('input-nim');
 Route::post('/check', [StudentController::class, 'check'])->name('check-nim');
 
-
 Route::get('/import', [ImportController::class, 'showImportForm'])->name('import.form');
 Route::post('/import', [ImportController::class, 'import'])->name('import.data');
 
+Route::post('/send-email', [ContactController::class, 'sendEmail'])->name('send.email');

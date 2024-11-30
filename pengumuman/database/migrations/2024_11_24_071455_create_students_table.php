@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('students', function (Blueprint $table) {
             $table->id();
             $table->string('nim')->unique();
+            $table->string('nama');
             $table->boolean('status_lulus')->default(false);
             $table->timestamps();
         });

@@ -11,7 +11,8 @@ class StudentsImport implements ToModel
     {
         return new Student([
             'nim' => $row[0], // Kolom pertama dalam Excel
-            'status_lulus' => filter_var($row[1], FILTER_VALIDATE_BOOLEAN), // Kolom kedua
+            'nama' => $row[1],
+            'status_lulus' => filter_var($row[2], FILTER_VALIDATE_BOOLEAN), // Kolom kedua
         ]);
     }
 }

@@ -20,7 +20,10 @@ class StudentController extends Controller
         $student = Student::where('nim', $request->nim)->first();
 
         if ($student) {
-            return view('status', ['status' => $student->status_lulus]);
+            return view('status', [
+                'nama' => $student->nama,
+                'status' => $student->status_lulus
+            ]);
         } else {
             return view('status', ['status' => null]);
         }

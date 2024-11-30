@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// switch title(bahasa/Language) privacy & policy 
+// switch title(bahasa/Language)  
 document.addEventListener("DOMContentLoaded", () => {
   const btnId = document.getElementById("btn-id");
   const btnEn = document.getElementById("btn-en");
@@ -80,6 +80,28 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+// switch title privacy & policy 
+document.addEventListener("DOMContentLoaded", () => {
+  const btnId = document.getElementById("btn-id");
+  const btnEn = document.getElementById("btn-en");
+  const contentIdprivasi = document.getElementById("content-id-privasi");
+  const contentEnprivacy = document.getElementById("content-en-privacy");
+
+  if (btnId && btnEn && contentIdprivasi && contentEnprivacy) {
+    // Event listener untuk tombol Bahasa Indonesia
+    btnId.addEventListener("click", () => {
+      contentIdprivasi.style.display = "block";
+      contentEnprivacy.style.display = "none";
+    });
+
+    // Event listener untuk tombol English
+    btnEn.addEventListener("click", () => {
+      contentIdprivasi.style.display = "none";
+      contentEnprivacy.style.display = "block";
+    });
+  }
+});
+
 // switch isi privacy & policy 
 document.addEventListener("DOMContentLoaded", () => {
   const btnId = document.getElementById("btn-id");

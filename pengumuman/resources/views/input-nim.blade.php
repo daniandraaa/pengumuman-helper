@@ -30,12 +30,11 @@
                 alt="about 1"
                 class="basis-1/3 sm:basis-1/3 sm:hidden mx-auto"
               />
-              <div class="flex-1 md:px-1 p-kelulusan">
-                <h1 style="font-size: calc(1.5rem + 1vw);  color: #2D78DB;" class="text-center sm:text-left font-bold font-mplus">PENGUMUMAN HELPHER</h1>
-                <h3 style="font-size: calc(1rem + 0.5vw); color: #74B0FF;" class="mb-4 text-center sm:text-left font-bold font-mplus">description title</h3>
+              <div class="flex-1 md:px-kelulusan p-kelulusan">
+                <h1 style="font-size: calc(1.5rem + 1vw);  color: #2D78DB;" class="text-center sm:text-left font-bold font-mplus">PENGUMUMAN HELPER</h1>
+                <h3 style="font-size: calc(1rem + 0.5vw); color: #74B0FF;" class="mb-4 text-center sm:text-left font-bold font-mplus">Cek Kelulusan Anda di Sini</h3>
                   <form style="color: black;" action="{{ route('check-nim') }}" method="POST">
                     @csrf
-                    <input type="text" placeholder="Nama Lengkap" />
                     <input class="mb-2" type="text" name="nim" placeholder="Masukkan NIM" required />
                     <button class="btn-check" type="submit">LIHAT KELULUSAN</button>
                   </form>
