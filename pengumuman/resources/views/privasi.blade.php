@@ -196,7 +196,9 @@
           <h1 style="text-align: start;" class="text-xl mb-2 sm:text-2xl font-bold font-mplus">8. Contact Us</h1>
           <h3 class="mb-4 font-mplus">If you have any questions, please contact us at: helphincontact@gmail.com.</h3>
           
-          <h3 class="mb-4 font-mplus">Effective as of October 20, 2024</h3>  
+          <h3 class="mb-4 font-mplus">Effective as of October 20, 2024</h3>
+          <hr class="border-t border-gray-300 my-4 mb-4">
+          <a class="btn relative max-w-64 mx-auto flex justify-center" href="{{ url('/') }}">Back</a>  
         </div>
       </section>   
     </div>

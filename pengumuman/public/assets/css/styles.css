@@ -1335,7 +1335,6 @@ a:hover{
 
 .language-btn {
   padding: 12px 24px;
-  margin-right: 16px;
   background-color: #D3D3D3; /* Warna default (kuning) */
   color: black;
   font-weight: bold;
@@ -1362,6 +1361,22 @@ a:hover{
 
 /* Layout untuk layar kecil (di bawah 640px) - Satu foto per baris */
 @media (max-width: 640px) {
+  .language-btn {
+    padding: 4px 14px;
+    background-color: #D3D3D3; /* Warna default (kuning) */
+    color: black;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .language-btn:hover {
+    color:#ffff;
+    background-color: #007BFF; /* Warna saat hover */
+  }
+  .active {
+    background-color: #007BFF; /* Warna biru saat aktif */
+    color: white; /* Mengubah warna teks jadi putih saat aktif */
+  }
   .mt-25{
     margin-top: 8rem;
   }
@@ -1664,7 +1679,10 @@ a:hover{
   }
 }
 @media (max-width: 768px) {
- 
+  .sm\:px-0{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
   .md\:px-kelulusan{
     margin-left:calc(2rem - 1rem);
     margin-right:calc(2rem - 1rem);
@@ -1815,6 +1833,12 @@ a:hover{
     margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
   }
+  
+  .lg\:space-y-15 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+  }
 
   .lg\:px-16{
     padding-left: 4rem;
@@ -1948,12 +1972,15 @@ a:hover{
 #gelombang-n {
   object-fit: cover;
 }
-#konten {
-  max-width: 40rem;
-  margin-top: calc(50px + 5vh); /* Responsif dengan tinggi viewport */
-  margin-left: calc(20px + 5vw); /* Responsif dengan lebar viewport */
-  gap: 10px;
+#phiny-cs {
+  
 }
+/* #konten {
+  max-width: 40rem;
+  margin-top: calc(50px + 5vh);
+  margin-left: calc(20px + 5vw); 
+  gap: 10px;
+} */
 
 #konten h1 {
   font-size: calc(32px + 2vw); /* Ukuran font responsif */
@@ -2108,12 +2135,33 @@ textarea {
 .btn-check:hover {
   background-color: #1b5c9e;
 }
+
+.btn-pengumuman {
+  background-color: #fff;
+  color: black;
+  border-radius: 20px;
+  padding: 3px 15px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-pengumuman:hover {
+  background-color: #FFD700; /* Ubah latar belakang menjadi hitam saat hover */
+  color: #fff;           /* Ubah warna teks menjadi putih saat hover */
+}
 /* Lihat pengumuman end */
 
 /* Responsif Page Contact Us*/
 @media(max-width: 767.9px) {
+  .sm\:btn-pengumuman {
+    background-color: #fff;
+    color: black;
+    border-radius: 20px;
+    padding: 5px 10px 5px 9px;
+    font-size: calc(11px + 0.1vw);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  }
   #konten {
-    margin-top: calc(80px + 3vh);
+    /* margin-top: calc(80px + 3vh); */
     margin-right: calc(20px + 3vh);
     margin-left: calc(20px + 3vh);
     justify-self: center;
@@ -2170,11 +2218,11 @@ textarea {
   }
 }
 @media (min-width: 768px) {
-  #konten {
+  /* #konten {
     margin-top: calc(80px + 5vh);
     margin-left: calc(50px + 5vw);
     margin-bottom: calc(120px + 5vh)
-  }
+  } */
 
   #konten h1 {
     font-size: calc(25px + 2vw);
@@ -2190,7 +2238,7 @@ textarea {
   }
 
   #icon-icon {
-    margin-left: calc(50px + 5vw);
+    /* margin-left: calc(50px + 5vw); */
     gap: calc(5px + 1vw); /* Jarak antar ikon lebih besar */
   }
 
@@ -2202,7 +2250,7 @@ textarea {
 }
 @media (max-width: 640px) {
   #konten {
-    margin-top: calc(80px + 3vh);
+    /* margin-top: calc(80px + 3vh); */
     margin-right: calc(20px + 3vh);
     margin-left: calc(20px + 3vh);
     justify-self: center;
@@ -2313,4 +2361,45 @@ textarea {
 
 }
 
+/* pop up success */
+.swal2-popup {
+  background-color: #e3f2fd !important; /* Warna biru muda */
+  color: #0d47a1 !important; /* Teks warna biru */
+  border: 2px solid #90caf9; /* Garis tepi biru */
+}
 
+.swal2-confirm {
+  width: 200px !important; /* Ubah lebar tombol sesuai kebutuhan */
+  background-color: #42a5f5 !important; /* Warna tombol */
+  color: #fff !important; /* Warna teks */
+  border: none !important;
+  border-radius: 5px !important;
+  padding: 10px 20px !important;
+  font-size: 16px !important;
+}
+
+.swal2-confirm:hover {
+  background-color: #1e88e5 !important; /* Warna tombol saat hover */
+}
+
+#phiny-cs {
+  width: 100%;
+  max-width: 600px; /* Maksimal lebar gambar */
+  height: auto; /* Biarkan tinggi menyesuaikan */
+}
+
+@media (max-width: 768px) {
+  #phiny-cs {
+    position: relative; /* Ubah posisi agar tidak fixed */
+    top: auto;
+    right: auto;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  #phiny-cs {
+    max-width: 300px; /* Kurangi ukuran gambar di layar kecil */
+  }
+}

@@ -12,70 +12,12 @@
     @include('general.navbar')
 
     <!-- congaratulation -->
-    @if ($status === 1)
-        <section class="mb-2">
-            <div class="flex flex-col justify-center items-center font-mplus ">
-                <div class="py-20 mt-25 px-12 sm:px-6 ">
-                <h1 style="color:#2D78DB; " class="text-cong-xl font-mplus sm:text-cong ">
-                    CONGRATULATIONS!
-                </h1>
-                </div>
-                
-                <!-- untuk tulisan nama -->
-                <div class = "flex pb-4 "> 
-                    <h1 style="background-color: #2D78DB;" class=" rounded-[5rem] px-12 py-3 text-xl sm:text-deskrip-cong" >
-                        {{ $nama }}
-                    </h1>
-                </div>
-
-                <div class="=flex justify-center  ">
-                    <p class="" style="color: black; font-size: calc(18px + 2px); text-align: center; ">
-                    Kamu menjadi bagian dari Helper. Kamu harus siap berkontribusi secara langsung untuk membantu para pelajar.
-                    </p>
-                </div>
-
-            </div>
-        </section>  
+    @if ($status)
+        @include('kelulusan.lulus')
     @elseif ($status === null)
-        <section class="mb-2">
-            <div class="flex flex-col justify-center items-center font-mplus ">
-                <div class="py-20 mt-25 px-12 sm:px-6 ">
-                    <h1 style="color:#2D78DB; " class="text-cong-xl font-mplus sm:text-cong ">
-                        Data Anda Tidak Ditemukan
-                    </h1>
-                </div>
-
-                <div class="=flex justify-center  ">
-                    <p class="" style="color: black; font-size: calc(18px + 2px); text-align: center; ">
-                        Hubungi pihak kami untuk mendapatkan informasi lebih lanjut.
-                    </p>
-                </div>
-            </div>
-        </section> 
+        @include('kelulusan.NotFound')
     @else
-        <section class="mb-2">
-            <div class="flex flex-col justify-center items-center font-mplus ">
-                <div class="py-20 mt-25 px-12 sm:px-6 ">
-                <h1 style="color:#2D78DB; " class="text-cong-xl font-mplus sm:text-cong ">
-                    Tetap Semangat YA
-                </h1>
-                </div>
-                
-                <!-- untuk tulisan nama -->
-                <div class = "flex pb-4 "> 
-                    <h1 style="background-color: #2D78DB;" class=" rounded-[5rem] px-12 py-3 text-xl sm:text-deskrip-cong" >
-                        {{ $nama }}
-                    </h1>
-                </div>
-
-                <div class="=flex justify-center  ">
-                    <p class="" style="color: black; font-size: calc(18px + 2px); text-align: center; ">
-                    Meskipun kali ini belum berhasil, jangan putus asa! Terus belajar dan persiapkan dirimu lebih baik lagi untuk kesempatan selanjutnya.
-                    </p>
-                </div>
-
-            </div>
-        </section>
+        @include('kelulusan.gagal')
     @endif
 
     <script src="./assets/js/index.js"></script>

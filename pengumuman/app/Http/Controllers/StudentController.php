@@ -22,6 +22,7 @@ class StudentController extends Controller
         if ($student) {
             return view('status', [
                 'nama' => $student->nama,
+                'nim' => $student->nim,
                 'status' => $student->status_lulus
             ]);
         } else {

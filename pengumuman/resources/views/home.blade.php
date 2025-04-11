@@ -231,7 +231,7 @@
         </div>
     
         <a style="margin-top: 3rem;"class="btn relative max-w-64 mx-auto flex justify-center"href="{{ url('/team') }}">
-          Show All
+          Show All Member
         </a>
       </div>
     </section>

@@ -1,5 +1,5 @@
 <header
-      class="sticky top-0 bg-x-navy z-40 flex items-center justify-between gap-4 px-4 sm:px-12 py-4 border-b-2 border-x-yellow"
+      class="sticky top-0 bg-x-navy z-40 flex items-center justify-between gap-4 px-4 py-4 sm:px-0 sm:px-12 border-b-2 border-x-yellow"
     >
       <a href="{{ url('/') }}">
         <img
@@ -25,6 +25,7 @@
         <a href="{{ url('/#team') }}">Team</a>
         <a href="{{ url('/#album') }}">Album</a>
         <a href="{{ url('/#contact') }}">Contact</a>
+        <a class="btn-pengumuman sm:btn-pengumuman" href="{{ url('/pengumuman') }}">Pengumuman</a>
       </div>
     </header>
 
@@ -39,4 +40,5 @@
         <a href="{{ url('/#team') }}">Team</a>
         <a href="{{ url('/#album') }}">Album</a>
         <a href="{{ url('/#contact') }}">Contact</a>
+        <a href="{{ url('/pengumuman') }}">Pengumuman</a>
     </aside>

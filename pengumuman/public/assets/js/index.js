@@ -156,7 +156,6 @@ if(btnEn){
   });
 }
 
-// Page Customer service
 function hubungiKami(event) {
   event.preventDefault(); // Cegah link berpindah halaman langsung
 
@@ -166,8 +165,21 @@ function hubungiKami(event) {
   const href = event.target.href; // Ambil URL tujuan
   let animationsCompleted = 0;
 
+  if (!href) {
+    console.error("URL tujuan tidak ditemukan.");
+    return;
+  }
+
+  if (icons.length === 0) {
+    console.warn("Ikon animasi tidak ditemukan.");
+    window.location.href = href;
+    return;
+  }
+
+  // Mulai animasi untuk setiap ikon dengan delay
   icons.forEach((icon, index) => {
     setTimeout(() => {
+      // Tambahkan kelas animate untuk memulai animasi
       icon.classList.add("animate");
 
       // Dengarkan event animasi selesai untuk setiap ikon
@@ -179,9 +191,22 @@ function hubungiKami(event) {
           window.location.href = href;
         }
       }, { once: true }); // Pastikan listener hanya berjalan sekali
-    }, index * 100); // Delay antar ikon
+    }, index * 100); // Delay antar ikon, misalnya 300ms per ikon
   });
+
+  // Fallback jika animasi tidak selesai dalam waktu yang diharapkan
+  setTimeout(() => {
+    if (animationsCompleted < icons.length) {
+      console.warn("Animasi tidak selesai, berpindah halaman secara paksa.");
+      window.location.href = href;
+    }
+  }, icons.length * 130); // Waktu maksimal untuk menyelesaikan animasi
 }
+
+
+
+
+
 
 
 

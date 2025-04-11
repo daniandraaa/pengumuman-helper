@@ -14,7 +14,7 @@
           </div>
   
           <div class="flex gap-2 flex-none">
-            <a href="#">
+            <a href="{{ url('/404') }}">
               <img
                 src="./assets/images/download-app-store.png"
                 alt="download-app-store"
@@ -22,7 +22,7 @@
               />
               <span class="sr-only">Download di App Store</span>
             </a>
-            <a href="#">
+            <a href="https://play.google.com/store/apps/details?id=com.find.application" target="_blank">
               <img
                 src="./assets/images/download-play-store.png"
                 alt="download-play-store"
@@ -148,7 +148,7 @@
                 <h6 class="mb-2">Jelajahi</h6>
                 <ul class="space-y-1 text-sm">
                   <li>
-                    <a href="{{ url('/about') }}">Tentang Kami</a>
+                    <a href="http://127.0.0.1:8000">Tentang Kami</a>
                   </li>
                   <li>
                     <a href="{{ url('/404') }}">FAQ</a>
@@ -173,7 +173,7 @@
               <h6 class="mb-2">Halaman Utilitas</h6>
               <ul class="space-y-1 text-sm">
                 <li>
-                  <a href="{{ url('/404') }}">Perizinan</a>
+                  <a href="{{ url('/perizinan') }}">Perizinan</a>
                 </li>
                 <li>
                   <a href="{{ url('/privasi') }}">Kebijakan & Privasi</a>

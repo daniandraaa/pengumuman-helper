@@ -1,0 +1,80 @@
+@media (min-width: 768px){
+    .md\:px-perizinan{
+        margin-left:calc(8rem - 1rem);
+        margin-right:calc(8rem - 1rem);
+        margin-top: calc(13rem - 4rem);
+
+    }
+    .md\:-top-perizinan{
+        top: -4rem;
+    }
+}
+
+@media (max-width: 768px){
+    .md\:px-perizinan{
+        margin-left:calc(4rem - 1rem);
+        margin-right:calc(4rem - 1rem);
+        margin-top: calc(10rem - 4rem);
+
+    }
+    .md\:px-surat{
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 0.5rem ;
+    }
+    .md\:-top-perizinan-1{
+        top: -2rem;
+    }
+
+    .md\:mx-button{
+        margin-right: 4rem ;
+        margin-left: 4rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 640px){
+    .sm\:pcc-title{
+        top : 0.3rem;
+    }
+
+    .sm\:size-title{
+        padding: 0.35rem;
+
+    }
+
+    .sm\:text-title-xl{
+        font-size: 1.3rem;
+        padding-left: 1rem ;
+        padding-right: 1rem;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+    }
+}
+
+/* top untuk kotak surat perizinan */
+.-top-perizinan{
+    top: -4.5rem;
+}
+
+/* mengatur title perizinan  */
+.max-w-5xl{
+    max-width: 70rem;
+}
+
+#kembali {
+    color: black;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    background-color: rgb(255 215 0 / var(--tw-bg-opacity));
+    transition: box-shadow 0.3s ease;
+}
+#kembali:hover{
+    color: white;
+    background-color: rgb(220, 198, 0);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}

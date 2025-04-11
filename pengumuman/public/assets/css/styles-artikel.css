@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-top: 0rem;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Style untuk layar kiri */
+  .left {
+    flex: 1;
+    align-items: center;
+    font-size: 2rem;
+    background-color: #ffffff;
+    padding-top: 4rem;
+    padding-left: 6rem;
+  }
+  
+  .pb {
+    padding-bottom: 20px; 
+  }
+  
+  .pb {
+    padding-bottom: 20px; 
+  }
+  
+
+  /* Style untuk layar kanan */
+  .right {
+    flex: 1;
+    display: flex;
+    align-items: flex-start; /* menempel ke atas */
+    justify-content: center;
+    font-size: 2rem;
+    background-color: #ffffff;
+  }
+  

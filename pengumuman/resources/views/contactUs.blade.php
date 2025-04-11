@@ -42,10 +42,10 @@
     @if(session('success'))
         <script>
             Swal.fire({
-                icon: 'success',
-                title: 'Sukses',
-                text: "{{ session('success') }}",
-                showConfirmButton: true,
+              icon: 'success',
+              title: 'Pesan Terkirim', // Judul pop-up
+              text: 'Terima kasih telah menghubungi kami. Kami akan segera menghubungi Anda.', // Teks deskripsi
+              confirmButtonText: 'OK',
             });
         </script>
     @endif
