@@ -46,6 +46,10 @@ Route::get('/Signup', function () {
     return view('loginArtikel/signup');
 });
 
+Route::get('/Login', function () {
+    return view('loginArtikel/login');
+});
+
 
 Route::get('/pengumuman', [StudentController::class, 'index'])->name('input-nim');
 Route::post('/check', [StudentController::class, 'check'])->name('check-nim');

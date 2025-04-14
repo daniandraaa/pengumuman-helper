@@ -9,6 +9,7 @@
     padding: 0;
     display: flex;
     height: 100vh;
+    font-family: Arial, sans-serif;
   }
   
   /* Style untuk layar kiri */
@@ -20,13 +21,48 @@
     padding-top: 4rem;
     padding-left: 6rem;
   }
-  
-  .pb {
-    padding-bottom: 20px; 
+
+  .form{
+    padding-right: 5rem;
+    text-align: center;
   }
   
-  .pb {
-    padding-bottom: 20px; 
+  .form-box label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 20px;
+    color: #333;
+    text-align:start;
+  }
+  
+  .form-box input {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .form-box input::placeholder {
+    color: #999;
+  }
+  
+  .form-box button {
+    margin-top:32px;
+    width: 100%;
+    padding: 14px;
+    background-color: #0095ff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .form-box button:hover {
+    background-color: #007bdb;
   }
   
 
@@ -39,4 +75,41 @@
     font-size: 2rem;
     background-color: #ffffff;
   }
+
+
+
+  //////////////////////////////////////////
+  //login
+  .kanan {
+    flex: 1;
+    display: flex;
+    align-items: flex-start; /* menempel ke atas */
+    justify-content: end;
+    font-size: 2rem;
+    background-color: #ffffff;
+  }
+
+  .form-box a{
+    color: #0095ff;
+    text-align: end;
+    font-size: 16px;
+  }
+
+  .Login-form{
+    padding-right: 30rem;
+    text-align: center;
+  }
+
+
+
+
+
+
+  // mangkrak dulu
+  /* @media (max-width: 1024px) {
+    .right img {
+      max-width: 450px; 
+      max-height: 500px;
+    }
+  } */
   
